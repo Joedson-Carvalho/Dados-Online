@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="img/favicon.ico" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: white;
+            height: 100%;
+            width: 98%;
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+        }
+        .tipo_dados{
+            display:flex;
+            justify-content: center;
+            font-size: 25px;
+        }
+        .dado{
+            display:flex;
+            justify-content: center;
+            font-size: 80px;
+        }
+        .dado span{
+            color: blue;
+        }
+        button{
+            font-size: 25px;
+            border-style: none;
+            padding: 10px 15px;
+            background-color: orange;
+            border-radius: 5px;
+        }
+    </style>
+    <div class="container">
+        <select name="Dados" id="tipo_dados" class="tipo_dados">
+            <option value="6">6</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="100">100</option>
+        </select>
+    </div>
+
+    <h1 id="dado" class="dado"><img src="img/download.png" alt="" class="src"><span id="valor_dado">0</span></h1>
+    
+    <div class="container">
+        <button id="bt">Lançar</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
